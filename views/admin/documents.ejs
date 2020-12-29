@@ -1,0 +1,144 @@
+<%- include('../partials/header') -%>   
+<div class="app">
+    <div class="app-wrapper">
+	    
+	    <div class="app-content pt-3 p-md-3 p-lg-4">
+		    <div class="container-xl">			    
+			    <h1 class="app-page-title">Documents</h1>
+			    <hr class="mb-4">
+                <div class="row g-4 settings-section">
+	                <div class="col-12 col-md-12">
+		                <div class="app-card app-card-settings shadow-sm p-4">
+						    
+						    <div class="app-card-body">
+							    <form method="POST" action="/documents/store">
+								    <div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Name</label>
+									    <input name="Name" type="text" class="form-control col-6">
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Offer letter</label>
+										<div class="form-group row">
+											
+											<div class="col-sm-10">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="offerLetter" value="Yes">
+													<label class="form-check-label" for="inlineRadio1">Yes</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="offerLetter" value="No">
+													<label class="form-check-label" for="inlineRadio2">No</label>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Appointment letter:</label>
+										<div class="form-group row">
+											
+											<div class="col-sm-10">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="AppoinmentLetter"  value="Yes">
+													<label class="form-check-label" for="inlineRadio1">Yes</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="AppoinmentLetter"  value="No">
+													<label class="form-check-label" for="inlineRadio2">No</label>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Documents taken date</label>
+										<input type="date" class="form-control col-6" name="DocumentsTakenDate">
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">10th Marksheet</label>
+										<div class="form-group row">
+											
+											<div class="col-sm-10">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="marksheet10"  value="Yes">
+													<label class="form-check-label" for="inlineRadio1">Yes</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="marksheet10"  value="No">
+													<label class="form-check-label" for="inlineRadio2">No</label>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">DIPL/12th Marksheet</label>
+										<div class="form-group row">
+											
+											<div class="col-sm-10">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="marksheet12"  value="Yes">
+													<label class="form-check-label" for="inlineRadio1">DIPL Marksheet</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="marksheet12"  value="No">
+													<label class="form-check-label" for="inlineRadio2">12th Marksheet</label>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Bachelor's certificate</label>
+										<textarea class="form-control col-6" name="bechelor_certificate" cols="30" rows="10"></textarea>
+										
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Master degree marksheet</label>
+										<textarea class="form-control col-6" name="master_degree_certificate" cols="30" rows="10"></textarea>
+										
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">ID proof</label>
+										<div class="form-group row">
+											
+											<div class="col-sm-10">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="ID_proof"  value="Yes">
+													<label class="form-check-label" for="inlineRadio1">Yes</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="ID_proof"  value="No">
+													<label class="form-check-label" for="inlineRadio2">No</label>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="mb-3">
+									    <label for="setting-input-1" class="form-label">Photo</label>
+										<input type="file" class="form-control col-6" name="photo">
+									</div>
+									<button type="submit" class="btn app-btn-primary col-6" >Add Document</button>
+							    </form>
+						    </div>
+						    
+						</div>
+	                </div>
+                </div>
+                
+               
+                
+              
+               
+                
+		    </div><!--//container-fluid-->
+	    </div><!--//app-content-->
+        <%- include('../partials/footer') -%>   
+
+    </div><!--//app-wrapper-->    					
+</div>

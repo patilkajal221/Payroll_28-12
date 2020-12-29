@@ -1,0 +1,157 @@
+<%- include('../partials/header') -%>   
+<div class="app">
+    <div class="app-wrapper">
+	    <div class="app-content pt-3 p-md-3 p-lg-4">
+		    <div class="container-xl">			    
+			    <h1 class="app-page-title">Add Payroll</h1>
+			    <hr class="mb-4">
+                <div class="row g-4 settings-section">
+	                <div class="col-12 col-md-12">
+		                <div class="app-card app-card-settings shadow-sm p-4">
+						    
+						    <div class="app-card-body">
+							    <form method="POST" action="/payroll/store">
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-rupee-sign"></i> </span>
+                                     </div>
+                                    <input name="stipend" class="form-control col-6" placeholder="Your Stipend amount" type="number">
+                                </div> <!-- form-group// -->
+                                
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-rupee-sign"></i> </span>
+                                     </div>
+                                    <input name="salary" class="form-control col-6" placeholder="Your Salary amount" type="number">
+                                </div>
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Choose Increment </span>
+                                     </div>
+                                 
+                                    <select class="form-control col-3" name="increment">
+                                        <option selected="">--select--</option>
+                                        <option value="Yearly">Yearly</option>
+                                        <option value="6 month">6 month</option>
+                                    </select>
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                     </div>
+                                    <input name="bondDuration" class="form-control col-6" placeholder="Your Bond Duration" type="text">
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Training_Start_Date </span>
+                                    </div>
+                                    <input name="trainingStartDate" class="form-control col-3" placeholder="Training_Start_Date" type="date" style="margin-right: 10px;">
+                                    
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Training_End_Date </span>
+                                    </div>
+                                    <input name="trainingEndDate" class="form-control col-3" placeholder="Training_End_Date" type="date" style="margin-right: 10px;">
+                                    
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Joinin_Date </span>
+                                    </div>
+                                    <input name="joiningDate" class="form-control col-4"  placeholder="Joinin_Date" type="date" style="margin-right: 10px;">
+                                    
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Bond_Completed_Date </span>
+                                    </div>
+                                    <input name="bondCompletedDate" class="form-control col-3" placeholder="Bond_Completed_Date" type="date" style="margin-right: 10px;">
+                                    
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group " style="width:50%">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> NDA </span>
+                                     </div>
+                                     <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="NDA" id="nda" value="Yes">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="NDA" id="nda" value="No">
+                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                        </div>
+                                        
+                                        
+                                    </div>     
+  
+                                </div> 
+                                
+                                
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Bond </span>
+                                     </div>
+                                     <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="bond" id="bond" value="Yes">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="bond" id="bond" value="No">
+                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                        </div>
+                                        
+                                        
+                                    </div> 
+                                </div> 
+                    
+                                
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Note </span>
+                                     </div>
+                                    <textarea class="form-control col-6" name="" name="note" cols="30" rows="2" placeholder="Add Your Extra Notes"></textarea>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <button type="submit" id="payrollbtn" class="btn btn-primary btn-block col-7"> Add PayrollDetail  </button>
+                                </div>
+                                
+                            </form>
+						    </div>
+						    
+						</div>
+	                </div>
+                </div>
+                
+               
+                
+              
+               
+                
+		    </div><!--//container-fluid-->
+	    </div><!--//app-content-->
+        <%- include('../partials/footer') -%>   
+
+    </div><!--//app-wrapper-->    		
+</div>			
+
